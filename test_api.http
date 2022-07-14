@@ -1,0 +1,45 @@
+# Create product
+POST http://localhost:3000/products
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Cat",
+    "price": 1200,
+    "description": "This is cat",
+    "specification": "...",
+    "category_id": 1
+}
+
+# Delete product
+DELETE  http://localhost:3000/products
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": 2
+}
+
+# Update product
+PUT http://localhost:3000/products
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Cat222",
+    "price": 1200,
+    "description": "This is cat222",
+    "specification": "...",
+    "rating": 5,
+    "category_id": 1
+}
+
+# Get all products
+GET http://localhost:3000/products 
+Accept: application/json
+
+# Get one product by id
+GET http://localhost:3000/products/2
+Accept: application/json
+

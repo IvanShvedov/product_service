@@ -1,0 +1,6 @@
+.idea
+.tmp
+*.log
+*.yaml
+/app/build
+.DB_Store
